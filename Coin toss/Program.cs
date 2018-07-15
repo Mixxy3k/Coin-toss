@@ -10,16 +10,13 @@ namespace Coin_toss
             CoinToss coinToss = new CoinToss();
             for (; ; )
             {
-                Console.WriteLine("---------- Coin toss ----------");
+                coinToss.WelcomeText();
                 coinToss.Input();
                 if (coinToss.Exit())
-                {
                     break;
-                }
                 coinToss.Toss();
                 coinToss.Result();
                 Console.ReadKey();
-                Console.Clear();
             }
         }
     }
